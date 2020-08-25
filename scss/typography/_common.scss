@@ -1,0 +1,32 @@
+// go to top button -------------------------
+.go-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #004e00;
+    color: #fff;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s;
+    @include flex-center;
+    transform: translateY(2rem);
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        transform: translateY(0rem);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+    }
+}
