@@ -23,6 +23,14 @@ $(document).ready(function () {
     // WOW active
     new WOW().init();
 
+    // slick slider for banner 
+    $('.banner-slider').slick({
+        prevArrow: '<i class="arrows prev icofont-rounded-left"></i>',
+        nextArrow: '<i class="arrows next icofont-rounded-right"></i>',
+        // dots: true,
+        autoplay: true
+    });
+
     // my code ----------------------------------------------------------------------
     // preloader
     $(".preloader").animate({
