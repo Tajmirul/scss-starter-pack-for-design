@@ -8,4 +8,5 @@ node js
 At first, clone the repo. Go to the folder. Open cmd or terminal and type: 
 
 npm install node-sass
+
 npm run scss
