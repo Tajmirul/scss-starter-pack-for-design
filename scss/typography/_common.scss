@@ -42,7 +42,7 @@
 // slider 
 .arrows{
     z-index: 1;
-    background: $theme-color;
+    background: $color-theme;
     border-radius: 50%;
     color: $color-white;
     position: absolute;
@@ -78,7 +78,7 @@ ul.main-ul{
 
             &:hover{
                 transform: translateX(1rem);
-                color: $theme-color !important;
+                color: $color-theme !important;
             }
         }
 

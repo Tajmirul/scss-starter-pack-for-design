@@ -28,7 +28,8 @@ body {
   overflow: hidden; }
 
 a,
-.button {
+.button,
+button {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -152,11 +153,50 @@ label {
 .fz-small {
   font-size: 1.4rem; }
 
-.fz-16 {
+.fz-normal {
   font-size: 1.6rem; }
 
-.fz-20 {
+.fz-large {
   font-size: 2rem; }
+
+.fz-extra-large {
+  font-size: 2.4rem; }
+
+.text-black {
+  color: #000; }
+
+.text-theme {
+  color: #08D665; }
+
+.hover-text-black:hover {
+  color: #000; }
+
+.hover-text-dark:hover {
+  color: #343a40; }
+
+.hover-text-white:hover {
+  color: #fff; }
+
+.hover-text-theme:hover {
+  color: #08D665; }
+
+.bg-black {
+  background-color: #000; }
+
+.bg-theme {
+  background-color: #08D665; }
+
+.hover-bg-dark:hover {
+  background-color: #343a40; }
+
+.hover-bg-black:hover {
+  background-color: #000; }
+
+.hover-bg-white:hover {
+  background-color: #fff; }
+
+.hover-bg-theme:hover {
+  background-color: #08D665; }
 
 .go-to-top {
   position: fixed;
@@ -195,7 +235,7 @@ label {
 
 .arrows {
   z-index: 1;
-  background: #C62641;
+  background: #08D665;
   border-radius: 50%;
   color: #fff;
   position: absolute;
@@ -224,7 +264,7 @@ ul.main-ul {
       transition: .3s; }
       ul.main-ul li a:hover {
         transform: translateX(1rem);
-        color: #C62641 !important; }
+        color: #08D665 !important; }
     ul.main-ul li i {
       float: right;
       cursor: pointer;
