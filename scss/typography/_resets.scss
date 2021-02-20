@@ -12,9 +12,7 @@ html {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: normal;
-	font-style: normal;
+	
 }
 
 img {
@@ -38,6 +36,7 @@ a,
 .button,
 button {
 	cursor: pointer;
+	display: inline-block;
 	-webkit-transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
 	-ms-transition: all 0.3s ease-out 0s;

@@ -1,23 +1,23 @@
 // font sizes ------------------------------------
-.fz-very-small{ font-size: 1.2rem; }
+.fz-extra-small{ font-size: 1.2rem; }
 .fz-small{ font-size: 1.4rem; }
 .fz-normal{ font-size: 1.6rem; }
 .fz-large{ font-size: 2rem; }
 .fz-extra-large{ font-size: 2.4rem; }
 // colors ------------------------------------
 
-.text-black{ color: $color-black; }
-.text-theme{ color: $color-theme; }
+.text-black{ color: var(--color-black); }
+.text-theme{ color: var(--color-theme); }
 
-.hover-text-black:hover{ color: $color-black; }
-.hover-text-dark:hover{ color: $color-dark; }
-.hover-text-white:hover{ color: $color-white; }
-.hover-text-theme:hover{ color: $color-theme; }
+.hover-text-black:hover{ color: var(--color-black); }
+.hover-text-dark:hover{ color: var(--color-dark); }
+.hover-text-white:hover{ color: var(--color-white); }
+.hover-text-theme:hover{ color: var(--color-theme); }
 
-.bg-black{ background-color: $color-black; }
-.bg-theme{ background-color: $color-theme; }
+.bg-black{ background-color: var(--color-black); }
+.bg-theme{ background-color: var(--color-theme); }
 
-.hover-bg-dark:hover{ background-color: $color-dark; }
-.hover-bg-black:hover{ background-color: $color-black; }
-.hover-bg-white:hover{ background-color: $color-white; }
-.hover-bg-theme:hover{ background-color: $color-theme; }
+.hover-bg-dark:hover{ background-color: var(--color-dark); }
+.hover-bg-black:hover{ background-color: var(--color-black); }
+.hover-bg-white:hover{ background-color: var(--color-white); }
+.hover-bg-theme:hover{ background-color: var(--color-theme); }

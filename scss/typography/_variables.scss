@@ -1,6 +1,10 @@
 // colors ------------------
-$color-white: #fff;
-$color-black: #000;
-$color-dark: #343a40;
-$text-black: #333;
-$color-theme: #08D665;
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-dark: #343a40;
+    --text-black: #333;
+
+    --color-yellow: #F58220;
+}
+
