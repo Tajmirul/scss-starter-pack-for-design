@@ -24,14 +24,17 @@
 //     new WOW().init();
 
     // slick slider for banner 
-    $('.banner-slider').slick({
-        prevArrow: '<i class="arrows prev icofont-rounded-left"></i>',
-        nextArrow: '<i class="arrows next icofont-rounded-right"></i>',
-        // dots: true,
-        autoplay: true
-    });
+    // $('.banner-slider').slick({
+    //     prevArrow: '<i class="arrows prev icofont-rounded-left"></i>',
+    //     nextArrow: '<i class="arrows next icofont-rounded-right"></i>',
+    //     // dots: true,
+    //     autoplay: true
+    // });
 
 //     // my code ----------------------------------------------------------------------
+    // $.each($('[data-bg-img]'), (index, item) => {
+    //     $(item).css('background-image', 'url(' + $(item).data('bgImg') + ')')
+    // })
 //     // preloader
 //     $(".preloader").animate({
 //         top: -2000000
