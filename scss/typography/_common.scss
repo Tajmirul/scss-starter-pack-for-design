@@ -63,37 +63,3 @@
         right: 2px;
     }
 }
-
-
-ul.main-ul{
-    width: 100%;
-    max-width: 70rem;
-    li{
-        display: block;
-        padding: 1rem 0;
-
-        a{
-            float: left;
-            transition: .3s;
-
-            &:hover{
-                transform: translateX(1rem);
-                color: var(--color-theme) !important;
-            }
-        }
-
-        i{
-            float: right;
-            cursor: pointer;
-            font-size: 2rem;
-        }
-
-        ul{
-            padding: 1rem 2rem;
-            clear: both;
-            // background: rgba(var(--color-black), .07);
-            display: none;
-        }
-    }
-
-}
