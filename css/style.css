@@ -1,1 +1,393 @@
-:root{--color-white: #fff;--color-black: #000;--bs-border: #dee2e6;--facebook: #1877f2;--messenger: #0084ff;--twitter: #1da1f2;--linkedIn: #0a66c2;--skype: #00aff0;--google-plus: #ea4335;--youtube: #ff0000;--whatsApp: #25d366;--medium: #02b875;--instagram: #c32aa3;--pinterest: #bd081c;--google: #4285f4;--snapchat: #fffc00}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:62.5%}img{max-width:100%;transition:all 0.3s ease-out 0s}a,.button,button{cursor:pointer;display:inline-block;transition:all 0.3s ease-out 0s}a:focus,.button:focus{text-decoration:none;outline:none}a:focus,a:hover,.portfolio-cat a:hover,.footer -menu li a:hover{color:#2B96CC;text-decoration:none}a{color:#1696e7;outline:medium none}button:focus,input:focus,input:focus,textarea,textarea:focus{outline:0}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:inherit}h1{font-size:4rem;font-weight:500}h2{font-size:3.5rem}h3{font-size:2.8rem}h4{font-size:2.2rem}h5{font-size:1.8rem}h6{font-size:1.6rem}ul{margin:0;padding:0}ul li{list-style:none}p{font-size:1.4rem;font-weight:normal;line-height:2.4rem;margin-bottom:1.5rem}hr{border-bottom:1px solid #eceff8;border-top:0 none;margin:3rem 0;padding:0}label{cursor:pointer;font-size:1.4rem;font-weight:400}.fz-extra-small{font-size:1.2rem}.fz-small{font-size:1.4rem}.fz-normal{font-size:1.6rem}.fz-large{font-size:2rem}.fz-extra-large{font-size:2.4rem}.text-black{color:var(--color-black)}.text-theme{color:var(--color-theme)}.hover-text-black:hover{color:var(--color-black)}.hover-text-dark:hover{color:var(--color-dark)}.hover-text-white:hover{color:var(--color-white)}.hover-text-theme:hover{color:var(--color-theme)}.bg-black{background-color:var(--color-black)}.bg-theme{background-color:var(--color-theme)}.hover-bg-dark:hover{background-color:var(--color-dark)}.hover-bg-black:hover{background-color:var(--color-black)}.hover-bg-white:hover{background-color:var(--color-white)}.hover-bg-theme:hover{background-color:var(--color-theme)}.go-to-top{position:fixed;bottom:2rem;right:2rem;background-color:#004e00;color:#fff;font-size:3rem;width:4rem;height:4rem;border-radius:50%;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;transform:translateY(2rem);visibility:hidden;opacity:0}.go-to-top.active{transform:translateY(0rem);visibility:visible;opacity:1}.go-to-top:hover{transform:translateY(-4px)}.go-to-top:active{transform:translateY(-2px)}.add{font-size:2rem;display:flex;align-items:center;justify-content:center;width:100%;background:rgba(var(--color-black), 0.3)}.arrows{z-index:1;background:var(--color-theme);border-radius:50%;color:var(--color-white);position:absolute;top:50%;transform:translateY(-50%);height:4rem;width:4rem;display:flex;align-items:center;justify-content:center;font-size:3rem;cursor:pointer}.arrows.prev{left:3px}.arrows.next{right:2px}.search-box__button{border:none;background-color:var(--color-yellow)}
+:root {
+  --color-primary: #00aff0;
+  --color-secondary: #00aff0;
+  --color-tertiary: #00aff0;
+  --color-facebook: #1877f2;
+  --color-messenger: #0084ff;
+  --color-twitter: #1da1f2;
+  --color-linkedIn: #0a66c2;
+  --color-skype: #00aff0;
+  --color-googlePlus: #ea4335;
+  --color-youtube: #ff0000;
+  --color-whatsApp: #25d366;
+  --color-medium: #02b875;
+  --color-instagram: #c32aa3;
+  --color-pinterest: #bd081c;
+  --color-google: #4285f4;
+  --color-snapchat: #fffc00;
+  --fz-xm: 1.2rem;
+  --fz-sm: 1.4rem;
+  --fz-md: 1.6rem;
+  --fz-lg: 2rem;
+  --fz-xl: 2.5rem;
+  --fz-xxl: 3.5rem;
+}
+
+.go-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #004e00;
+  color: #fff;
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(2rem);
+  visibility: hidden;
+  opacity: 0;
+}
+.go-to-top.active {
+  transform: translateY(0rem);
+  visibility: visible;
+  opacity: 1;
+}
+.go-to-top:hover {
+  transform: translateY(-4px);
+}
+.go-to-top:active {
+  transform: translateY(-2px);
+}
+@media (min-width: 1400px) {
+  .go-to-top {
+    font-size: 4rem;
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+.add {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgba(var(--color-black), 0.3);
+}
+
+.arrows {
+  z-index: 1;
+  background: var(--color-theme);
+  border-radius: 50%;
+  color: var(--color-white);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.arrows.prev {
+  left: 3px;
+}
+.arrows.next {
+  right: 2px;
+}
+
+.fz-xm {
+  font-size: var(--fz-xm);
+}
+
+.fz-sm {
+  font-size: var(--fz-sm);
+}
+
+.fz-md {
+  font-size: var(--fz-md);
+}
+
+.fz-lg {
+  font-size: var(--fz-lg);
+}
+
+.fz-xl {
+  font-size: var(--fz-xl);
+}
+
+.fz-xxl {
+  font-size: var(--fz-xxl);
+}
+
+.m-5,
+.mx-5,
+.ml-5 {
+  margin-left: 5;
+}
+
+.m-5,
+.mx-5,
+.mr-5 {
+  margin-left: 5;
+}
+
+.m-5,
+.my-5,
+.mt-5 {
+  margin-left: 5;
+}
+
+.m-5,
+.my-5,
+.mb-5 {
+  margin-left: 5;
+}
+
+.m-20,
+.mx-20,
+.ml-20 {
+  margin-left: 20;
+}
+
+.m-20,
+.mx-20,
+.mr-20 {
+  margin-left: 20;
+}
+
+.m-20,
+.my-20,
+.mt-20 {
+  margin-left: 20;
+}
+
+.m-20,
+.my-20,
+.mb-20 {
+  margin-left: 20;
+}
+
+.m-25,
+.mx-25,
+.ml-25 {
+  margin-left: 25;
+}
+
+.m-25,
+.mx-25,
+.mr-25 {
+  margin-left: 25;
+}
+
+.m-25,
+.my-25,
+.mt-25 {
+  margin-left: 25;
+}
+
+.m-25,
+.my-25,
+.mb-25 {
+  margin-left: 25;
+}
+
+.m-35,
+.mx-35,
+.ml-35 {
+  margin-left: 35;
+}
+
+.m-35,
+.mx-35,
+.mr-35 {
+  margin-left: 35;
+}
+
+.m-35,
+.my-35,
+.mt-35 {
+  margin-left: 35;
+}
+
+.m-35,
+.my-35,
+.mb-35 {
+  margin-left: 35;
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
+.text-theme {
+  color: var(--color-theme);
+}
+
+.hover-text-black:hover {
+  color: var(--color-black);
+}
+
+.hover-text-dark:hover {
+  color: var(--color-dark);
+}
+
+.hover-text-white:hover {
+  color: var(--color-white);
+}
+
+.hover-text-theme:hover {
+  color: var(--color-theme);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.bg-theme {
+  background-color: var(--color-theme);
+}
+
+.hover-bg-dark:hover {
+  background-color: var(--color-dark);
+}
+
+.hover-bg-black:hover {
+  background-color: var(--color-black);
+}
+
+.hover-bg-white:hover {
+  background-color: var(--color-white);
+}
+
+.hover-bg-theme:hover {
+  background-color: var(--color-theme);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+
+a,
+.button,
+button {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: #2B96CC;
+  text-decoration: none;
+}
+
+a {
+  color: #1696e7;
+  outline: medium none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  border-bottom: 1px solid #eceff8;
+  border-top: 0 none;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.button, .button--icon, .button--tertiary, .button--secondary, .button--primary {
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+.search-box__button {
+  border: none;
+  background-color: var(--color-yellow);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,26 +1,26 @@
 .heading {
     &--section {
         // h2
-
+        @extend .heading;
     }
 
     &--primary {
         // h2
-
+        @extend .heading;
     }
 
     &--secondary {
         // h3
-
+        @extend .heading;
     }
 
     &--tertiary {
         // h4
-
+        @extend .heading;
     }
 
     &--tertiary--2 {
         // h5
-
+        @extend .heading;
     }
 }

@@ -1,9 +1,36 @@
-// font sizes ------------------------------------
-.fz-extra-small{ font-size: 1.2rem; }
-.fz-small{ font-size: 1.4rem; }
-.fz-normal{ font-size: 1.6rem; }
-.fz-large{ font-size: 2rem; }
-.fz-extra-large{ font-size: 2.4rem; }
+@use '../abstracts' as *;
+
+// font size
+@each $size, $value in $font-size {
+    .fz-#{$size} {
+        font-size: var(--fz-#{$size});
+    }
+}
+
+// margin and padding util classes
+@each $value in $margin-padding {
+    .m-#{$value},
+    .mx-#{$value},
+    .ml-#{$value} {
+        margin-left: #{$value};
+    }
+    .m-#{$value},
+    .mx-#{$value},
+    .mr-#{$value} {
+        margin-left: #{$value};
+    }
+    .m-#{$value},
+    .my-#{$value},
+    .mt-#{$value} {
+        margin-left: #{$value};
+    }
+    .m-#{$value},
+    .my-#{$value},
+    .mb-#{$value} {
+        margin-left: #{$value};
+    }
+}
+
 // colors ------------------------------------
 
 .text-black{ color: var(--color-black); }
