@@ -48,18 +48,16 @@
     .text-#{$color} { color: var(--color-#{$color}); }
 }
 
-.text-black{ color: var(--color-black); }
-.text-theme{ color: var(--color-theme); }
+.text-theme{ color: var(--color-primary); }
 
-.hover-text-black:hover{ color: var(--color-black); }
 .hover-text-dark:hover{ color: var(--color-dark); }
-.hover-text-white:hover{ color: var(--color-white); }
-.hover-text-theme:hover{ color: var(--color-theme); }
+.hover-text-dark:hover{ color: var(--color-dark); }
+.hover-text-theme:hover{ color: var(--color-primary); }
 
-.bg-black{ background-color: var(--color-black); }
-.bg-theme{ background-color: var(--color-theme); }
+.bg-dark{ background-color: var(--color-dark); }
+.bg-theme{ background-color: var(--color-primary); }
 
 .hover-bg-dark:hover{ background-color: var(--color-dark); }
-.hover-bg-black:hover{ background-color: var(--color-black); }
+.hover-bg-dark:hover{ background-color: var(--color-dark); }
 .hover-bg-white:hover{ background-color: var(--color-white); }
-.hover-bg-theme:hover{ background-color: var(--color-theme); }
+.hover-bg-theme:hover{ background-color: var(--color-primary); }

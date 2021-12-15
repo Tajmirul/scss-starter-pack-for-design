@@ -1,4 +1,5 @@
 :root {
+  --color-dark: #212529;
   --color-primary: #00aff0;
   --color-secondary: #00aff0;
   --color-tertiary: #00aff0;
@@ -66,7 +67,7 @@
 
 .arrows {
   z-index: 1;
-  background: var(--color-theme);
+  background: var(--color-primary);
   border-radius: 50%;
   color: var(--color-white);
   position: absolute;
@@ -237,6 +238,10 @@
   --bs-gutter-y: 25;
 }
 
+.text-dark {
+  color: var(--color-dark);
+}
+
 .text-primary {
   color: var(--color-primary);
 }
@@ -249,44 +254,36 @@
   color: var(--color-tertiary);
 }
 
-.text-black {
-  color: var(--color-black);
-}
-
 .text-theme {
-  color: var(--color-theme);
-}
-
-.hover-text-black:hover {
-  color: var(--color-black);
+  color: var(--color-primary);
 }
 
 .hover-text-dark:hover {
   color: var(--color-dark);
 }
 
-.hover-text-white:hover {
-  color: var(--color-white);
+.hover-text-dark:hover {
+  color: var(--color-dark);
 }
 
 .hover-text-theme:hover {
-  color: var(--color-theme);
+  color: var(--color-primary);
 }
 
-.bg-black {
-  background-color: var(--color-black);
+.bg-dark {
+  background-color: var(--color-dark);
 }
 
 .bg-theme {
-  background-color: var(--color-theme);
+  background-color: var(--color-primary);
 }
 
 .hover-bg-dark:hover {
   background-color: var(--color-dark);
 }
 
-.hover-bg-black:hover {
-  background-color: var(--color-black);
+.hover-bg-dark:hover {
+  background-color: var(--color-dark);
 }
 
 .hover-bg-white:hover {
@@ -294,7 +291,7 @@
 }
 
 .hover-bg-theme:hover {
-  background-color: var(--color-theme);
+  background-color: var(--color-primary);
 }
 
 *,
