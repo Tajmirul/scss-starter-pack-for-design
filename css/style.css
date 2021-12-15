@@ -2,25 +2,19 @@
   --color-primary: #00aff0;
   --color-secondary: #00aff0;
   --color-tertiary: #00aff0;
-  --color-facebook: #1877f2;
-  --color-messenger: #0084ff;
-  --color-twitter: #1da1f2;
-  --color-linkedIn: #0a66c2;
-  --color-skype: #00aff0;
-  --color-googlePlus: #ea4335;
-  --color-youtube: #ff0000;
-  --color-whatsApp: #25d366;
-  --color-medium: #02b875;
-  --color-instagram: #c32aa3;
-  --color-pinterest: #bd081c;
-  --color-google: #4285f4;
-  --color-snapchat: #fffc00;
-  --fz-xm: 1.2rem;
-  --fz-sm: 1.4rem;
-  --fz-md: 1.6rem;
-  --fz-lg: 2rem;
-  --fz-xl: 2.5rem;
-  --fz-xxl: 3.5rem;
+  --facebook: #1877f2;
+  --messenger: #0084ff;
+  --twitter: #1da1f2;
+  --linkedIn: #0a66c2;
+  --skype: #00aff0;
+  --googlePlus: #ea4335;
+  --youtube: #ff0000;
+  --whatsApp: #25d366;
+  --medium: #02b875;
+  --instagram: #c32aa3;
+  --pinterest: #bd081c;
+  --google: #4285f4;
+  --snapchat: #fffc00;
 }
 
 .go-to-top {
@@ -211,6 +205,48 @@
 .my-35,
 .mb-35 {
   margin-left: 35;
+}
+
+.g-5px,
+.gx-5px {
+  --bs-gutter-x: 5;
+}
+
+.g-5px,
+.gy-5px {
+  --bs-gutter-y: 5;
+}
+
+.g-20px,
+.gx-20px {
+  --bs-gutter-x: 20;
+}
+
+.g-20px,
+.gy-20px {
+  --bs-gutter-y: 20;
+}
+
+.g-25px,
+.gx-25px {
+  --bs-gutter-x: 25;
+}
+
+.g-25px,
+.gy-25px {
+  --bs-gutter-y: 25;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-tertiary {
+  color: var(--color-tertiary);
 }
 
 .text-black {

@@ -31,7 +31,22 @@
     }
 }
 
+// gutter for rows
+@each $value in $row-gutters {
+    .g-#{$value}px,
+    .gx-#{$value}px {
+        --bs-gutter-x: #{$value};
+    }
+    .g-#{$value}px,
+    .gy-#{$value}px {
+        --bs-gutter-y: #{$value};
+    }
+}
+
 // colors ------------------------------------
+@each $color, $value in $colors {
+    .text-#{$color} { color: var(--color-#{$color}); }
+}
 
 .text-black{ color: var(--color-black); }
 .text-theme{ color: var(--color-theme); }

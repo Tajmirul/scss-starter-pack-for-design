@@ -4,8 +4,7 @@
     @each $color, $value in $colors {
         --color-#{$color}: #{$value};
     }
-    // variables for font size
-    @each $size, $value in $font-size {
-        --fz-#{$size}: #{$value};
+    @each $color, $value in $social-media {
+        --#{$color}: #{$value};
     }
 }
