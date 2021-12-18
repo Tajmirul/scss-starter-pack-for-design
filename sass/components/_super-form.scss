@@ -1,0 +1,58 @@
+.super-form {
+    $block: &;
+    position: relative;
+    margin-bottom: 15px;
+
+    &__group {
+        position: relative;
+        font-family: var(--ff-tertiary);
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: 1.6rem 1.8rem;
+        outline: none !important;
+        border: none;
+        color: var(--color-dark-theme);
+        background-color: #f8faff;
+        width: 100%;
+        font-weight: 700;
+
+        &.error {
+            border-color: var(--bs-danger);
+        }
+
+        &.error ~ #{$block}__label {
+            color: var(--bs-danger);
+        }
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:placeholder-shown + #{$block}__label {
+            top: 50%;
+            color: var(--color-dark-theme);
+        }
+        &:focus + #{$block}__label {
+            top: 2%;
+            color: var(--color-muted);
+        }
+    }
+
+    &__label {
+        padding: 0 2px;
+        position: absolute;
+        top: 2%;
+        left: 1.6rem;
+        color: var(--color-muted);
+        transform: translateY(-40%);
+        pointer-events: none;
+        font-weight: 600;
+        transition: all 0.3s;
+
+        &--icon {
+            float: right;
+        }
+    }
+}
